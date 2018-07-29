@@ -5,15 +5,9 @@ const fs = require("fs");
 
 const router=(req,res)=>{
 
- fs.readFile(__dirname+"/index.html",(error,file)=>{
-   if(error){
-     res.writeHeader(500,{"content-type":"text/html"});
-     res.end("<h1> Don't call me may be </h1>");
-   }else{
-     res.writeHeader(200,{"content-type":"text/html"});
-     res.end(file);
+  res.writeHeader(200,{"content-type":"text/html"});
+  res.end("<h1>Hey, I just met you, and this is crazy! Here is a callback, so call it maybe?</h1>");
 
-   }
  });
 
 };
