@@ -23,5 +23,7 @@
 
 #### `npm run start` will run on your localhost port 3000.
 
-##### if there are no error you should get the html file which has only h1 heder of:  "Hey, I just met you, and this is crazy! Here is a callback, so call it maybe?"
-##### if there were error in reading the file you should get "Don't call me may be"
+##### if there are no error you should get the html file which has only h1 heder of:  "Hey, I just met you, and this is crazy! Here is a callback, so call it maybe?".
+##### if there were error in reading the file you should get "Don't call me may be".
+
+##### By default you should get no errors.
