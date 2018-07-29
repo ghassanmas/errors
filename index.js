@@ -8,8 +8,8 @@ const router=(req,res)=>{
  const file=readFile(__dirname+"/index.html");
 
  if(file instanceof Error){
-   res.writeHeader(200,{"content-type":"text/plain"});
-   res.end("Don't call me may be");
+   res.writeHeader(500,{"content-type":"text/html"});
+   res.end("<h1> Don't call me may be </h1>");
  }else{
    res.writeHeader(200,{"content-type":"text/html"});
    res.end(file);
